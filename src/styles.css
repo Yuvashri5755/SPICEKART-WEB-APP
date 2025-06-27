@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://files.oaiusercontent.com/file-4sQg4SWxu9f2G4viFsBA7a?se=2025-01-29T05%3A24%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Denhanced_image.png&sig=eLAFWrzOuBoAFkItEFx2gKi9yxOMIrQ5buAVJOoBA/0%3D'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Apply different backgrounds for specific pages */
+  .home-page,
+  .login-page,
+  .user-dashboard,
+  .cart-page,
+  .admin-dashboard,
+  .user-order-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Optional: Add a dark overlay effect */
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  

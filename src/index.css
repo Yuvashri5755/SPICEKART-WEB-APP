@@ -1,0 +1,566 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full height */
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsl(0, 0%, 0%);
+}
+
+/* Common Styles for Pages */
+
+.home-page{
+  background-image: url('https://img.freepik.com/premium-photo/set-different-spices-closeup-dark-table-ai-generation_201606-4988.jpg');
+  background-size: cover;
+  backdrop-filter: blur(30px);
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+.home-page button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+ 
+}
+
+.home-page button:hover {
+  background-color: lightgray;
+}
+.about-us-page{
+  background-image: url('https://img.freepik.com/premium-photo/3d-rendered-photos-spices-plain-background-other-natural-ingredients_1096167-105051.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-page {
+  display: flex;
+  justify-content: flex-start; /* Align to the left of the screen */
+  align-items: flex-start; /* Align items at the top */
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7); /* Optional, adds a light background */
+  padding-left: 20px; /* Add padding to push content towards the right */
+}
+
+.about-us-container {
+  max-width: 800px; /* Set the max-width for content */
+  margin-left: 20px; /* Push the container to the right */
+  margin-right: auto; /* Add some right margin for spacing */
+  text-align: left; /* Align text to the left */
+  padding-left: 10px; /* Add padding around the content */
+  background-color: #d3cdcd; /* Optional: background color for content area */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.about-us-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.about-us-container li {
+  list-style: none;
+  width: 22%; /* Adjust for 3-4 items per row */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #dddada;
+}
+
+.product-benefits {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.product-benefits li {
+  margin-bottom: 10px;
+}
+
+.closing-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* ✅ Login Page - Glassmorphism Effect */
+.login-page {
+  background: url('https://img.freepik.com/premium-photo/spices-nuts-white-background_1001175-59886.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(66, 65, 65, 0.2);
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(42, 40, 40, 0.3);
+  width: 350px;
+  height: 450;
+  text-align: center;
+  color: black;
+}
+
+/* ✅ User Dashboard & Cart Page - Blurred Background */
+  .user-dashboard {
+    background:url("https://img.freepik.com/premium-photo/generative-ai-spices-herbs-frame-black-flat-top-view_934909-1218.jpg") no-repeat center center/cover;
+    font-family: 'Cormorant Garamond', serif;
+    background-image: blur(70%);
+    font-variant: #080808;
+    color: #000;
+    padding-bottom: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  .search  li {
+    list-style: none;
+    width: 30%; /* Adjust for 3-4 items per row */
+    text-align: center;
+    border: 20px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background: hsl(0, 11%, 86%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: #080808;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  .available ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .available li {
+    list-style: none;
+    width: 22%; /* Adjust for 3-4 items per row */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background: hsl(0, 2%, 67%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: #080808;
+  }
+  
+.cart-page {
+  
+  background: url('https://img.freepik.com/premium-photo/spices-herbs-wooden-background-top-view-with-free-space-menu-recipes_763111-5007.jpg') no-repeat center center/cover;
+  font-family: 'Cormorant Garamond', serif;
+  font-variant: black;
+  flex-direction:column;
+  justify-content: left; /* Align content to the top */
+  align-items: left; /* Align items to the left */
+  padding-right: 1000px; /* Add some padding to the left and right */
+  padding-bottom: 100px;
+}
+/* General Cart Container Styling */
+.cart-container {
+  max-width: 1000px;
+  margin: auto;
+  width: 200%;
+  background-color: #878585;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-variant: black;
+  color: #000;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px #6968681a;
+  padding: 24px;
+}
+
+/* Table Styling */
+.cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.cart-container th, 
+.cart-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.cart-container th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+/* Product Image & Name */
+.cart-container td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* Quantity Button Styling */
+.cart-container button {
+  cursor: pointer;
+  border: none;
+  padding: 6px 10px;
+  margin: 0 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.cart-container button:hover {
+  opacity: 0.8;
+}
+
+/* Remove Button */
+.cart-container .text-red-500 {
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-container .text-red-500:hover {
+  color: darkred;
+}
+
+/* Form Inputs */
+.cart-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Payment Method Styling */
+.cart-container label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Order Summary */
+.cart-container .text-lg {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.cart-container .text-xl {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Place Order Button */
+.cart-container .bg-black {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.cart-container .bg-black:hover {
+  background-color: #333;
+}
+.order-confirm{
+   background:url('https://img.freepik.com/premium-photo/spices-herbs-wooden-background-top-view-with-free-space-menu-recipes_763111-5019.jpg') no-repeat center center/cover;
+   font-family: 'Cormorant Garamond', serif;
+   background-position: center;
+  background-attachment: fixed;
+   font-variant: #fbf8f8; 
+   padding-bottom: 50%;
+   color: hwb(0 0% 100%);
+}
+/* Container Styles */
+.order-items-container {
+  margin-top: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 8px;
+  width: 50%;
+  background-color: hsl(0, 2%, 84%);
+}
+
+/* Table Styles */
+.order-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.order-items-table thead {
+  background-color: #f4f4f4;
+}
+
+.order-items-table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table Body */
+.order-items-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Item Image */
+.order-item-img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-items-table th,
+  .order-items-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .order-item-img {
+    width: 80px;
+    height: 60px;
+  }
+}
+.product{
+  background:url('https://img.freepik.com/premium-photo/white-background-with-frame-food-ai-generated_1034098-1442.jpg?w=360') no-repeat center center/cover;
+  background-position: center;
+  background-attachment: fixed;
+   font-variant: #fbf8f8; 
+   padding-bottom: 50%;
+   color: hwb(0 0% 100%);
+}
+.user-dashboard::before,
+.cart-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+/* ✅ Admin Dashboard & User Order Page - Different Blurred Background */
+.admin-dashboard{
+  background: url('https://img.freepik.com/free-photo/frame-made-different-nuts-spices-dark-background-top-view_1057-36951.jpg') no-repeat center center/cover;
+  font-family: 'Cormorant Garamond', serif;
+  background-image: blur(30px);
+  font-variant: black;
+
+}
+.admin-dashboard button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.admin-dashboard button:hover {
+  background-color: lightgray;
+}
+
+.admin-panel{
+  background:url("https://static.vecteezy.com/system/resources/thumbnails/031/708/264/small_2x/border-of-herbs-and-spices-on-a-white-background-free-space-photo.jpg") no-repeat center center/cover;
+  font-family: 'Cormorant Garamond', serif;
+  font-variant: #ededed;
+  background-position: center;
+  background-attachment: fixed;
+   font-variant: #fbf8f8; 
+   padding-bottom: 50%;
+   color: hwb(0 0% 100%);
+
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Adds space between items */
+  justify-content: center; /* Centers products */
+}
+
+.product-card {
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid hsl(0, 1%, 82%);
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(249, 193, 7, 0.523);
+}
+
+.product-image {
+  width: 100%; /* Makes sure image fits */
+  height: auto;
+  border-radius: 8px;
+}
+.admin-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.admin-panel li {
+  list-style: none;
+  width: 22%; /* Adjust for 3-4 items per row */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #acacac;
+}
+
+
+.user-order-page {
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/026/475/615/small/spices-for-cooking-composition-of-various-spices-and-cereals-on-a-brown-background-top-view-space-for-copying-ai-generative-photo.jpg') no-repeat center center/cover;
+  background-image: blur(50px);
+  font-family: 'Cormorant Garamond', serif;
+  font-variant:black;
+  color: rgb(10, 10, 10); /* Ensures text remains readable */
+  padding-bottom: 100%;
+}
+
+/* Adds a blur effect on the background */
+.user-order-page table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures no extra spacing between borders */
+  background: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+}
+
+.user-order-page th, td {
+  border: 2px solid black; /* Creates black borders */
+  padding: 10px; /* Adds space inside cells */
+  text-align: left; /* Aligns text to the left */
+  font-family: 'Cormorant Garamond', serif;
+  font-variant:black;
+  color: black; 
+}
+
+.user-order-page th {
+  background: #878484; /* Black background for headers */
+  color: white; /* White text for headers */
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  font-variant:black;
+}
+
+.user-order-page tr:nth-child(even) {
+  background: #f2f2f2; /* Alternating row colors */
+  font-family: 'Cormorant Garamond', serif;
+  font-variant:black;
+}
+
+/* Additional Styling */
+.user-order-page h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.admin-rating{
+  background: url("https://img.freepik.com/premium-photo/spices-herbs-selection-white-background-with-copy-space-text_641503-87341.jpg") no-repeat center center/cover;
+  background-position: center;
+  background-attachment: fixed;
+   font-variant: #fbf8f8; 
+   padding-bottom: 50%;
+   color: hwb(0 0% 100%);
+}
+
+.admin-dashboard::before,
+.user-order-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
+/* Default styles for app container */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f70b0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e61515;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bd0c0c;
+}
